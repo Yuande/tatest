@@ -1,3 +1,4 @@
+
 #tatest
 
 tatest is called ta-test, a modified two-sample or two-condition t-test where "a" is alpha that is significance level. ta-test has much lower type I error rate than t-test in biological experiments with small samples but it has the same statistical power with t-test. ta-test can be used to test for single null hypothesis with one tail ("less", "greater") or two tails("two.sided") but also can be used to perform multiple hypotheses. 
@@ -7,22 +8,22 @@ tatest is called ta-test, a modified two-sample or two-condition t-test where "a
 `ta.test(X, nci=NULL, na, nb, alpha=0.05, paired=FALSE, eqv=TRUE,LOG=c("NULL","LOG2","LOG","LOG10"),
  alternative = c("two.sided", "less", "greater"), distr="norm")`
 
-  where 
-   **X**: a numeric vector data or a numeric matrix (two columns) dataset with two conditions or groups A and B having sample size na and nb, respectively. X is also a datasheet of multiple variables (for example, genes ) with two groups A and B and information (character) columns(see an example Ecadherin)
+where 
+**X**: a numeric vector data or a numeric matrix (two columns) dataset with two conditions or groups A and B having sample size na and nb, respectively. X is also a datasheet of multiple variables (for example, genes ) with two groups A and B and information (character) columns(see an example Ecadherin)
 
-    **nci**: a numeric int value, column numbers for strings or information of data. If X is a numeric vector data or a numeric matrix (two columns) dataset, then nci=NULL, otherwise, nci is required to be non-zeror integer, meaning that at least one column is reserved as information of data
+**nci**: a numeric int value, column numbers for strings or information of data. If X is a numeric vector data or a numeric matrix (two columns) dataset, then nci=NULL, otherwise, nci is required to be non-zeror integer, meaning that at least one column is reserved as information of data
 
-     **alpha**: a numeric constant, statistical cutoff for significance level. If dataset X is multiple variables (rows) (variable number is over 1000) and nci>0, then alpha is taken default values of 0.05 and 0.01.
+**alpha**: a numeric constant, statistical cutoff for significance level. If dataset X is multiple variables (rows) (variable number is over 1000) and nci>0, then alpha is taken default values of 0.05 and 0.01.
 
-      **paired**: a logical indicating whether you want a paired t-test.
+**paired**: a logical indicating whether you want a paired t-test.
 
-       *eqv*: a logical variable indicating whether to treat the two variances as being equal. If TRUE then the pooled variance is used to estimate the variance otherwise the Welch (or Satterthwaite) approximation to the degrees of freedom is used.
+**eqv**: a logical variable indicating whether to treat the two variances as being equal. If TRUE then the pooled variance is used to estimate the variance otherwise the Welch (or Satterthwaite) approximation to the degrees of freedom is used.
 
-        **LOG**: logarithm. If data are not taken logarithm convertion, then LOG=NULL , if data are converted into logarithm with base 10, 2 or natural logarithm, then correspondingly, LOG="LOG10", "LOG2" or "LOG".
+**LOG**: logarithm. If data are not taken logarithm convertion, then LOG=NULL , if data are converted into logarithm with base 10, 2 or natural logarithm, then correspondingly, LOG="LOG10", "LOG2" or "LOG".
 
-        **alternative**: a character string specifying the alternative hypothesis, must be one of "two.sided" (default), "greater" or "less". You can specify just the initial letter.
+**alternative**: a character string specifying the alternative hypothesis, must be one of "two.sided" (default), "greater" or "less". You can specify just the initial letter.
 
-        **distr**:data distribution for estimating omega. Default is normal distribution.  In current version, we just consider three types of data distributions: "negative distribution"(or "NB"), "norm"(or "normal"), and "unif"(or "uniform").  User can choose one of them according to user's data distribution.
+**distr**:data distribution for estimating omega. Default is normal distribution.  In current version, we just consider three types of data distributions: "negative distribution"(or "NB"), "norm"(or "normal"), and "unif"(or "uniform").  User can choose one of them according to user's data distribution.
 
 ## Details:
 
@@ -75,32 +76,33 @@ If X is microarray, RPPA data, then a list is datasheet including t01,pv01, t05 
 
 `ta.test(X=dat,nci=NULL, na=4,nb=4, eqv=TRUE, alpha=0.05, LOG="NULL", alternative = "two.sided")`
 
-   `Two Sample t-test`
+`Two Sample t-test`
 
-  `data:  XA and XB`
+`data:  XA and XB`
 
-   `t = -94.353, df = 6, p-value = 9.55e-11`
+`t = -94.353, df = 6, p-value = 9.55e-11`
 
-   `alternative hypothesis: true difference in means is not equal to 0.95`
+`alternative hypothesis: true difference in means is not equal to 0.95`
 
-   `95 percent confidence interval:`
+`95 percent confidence interval:`
 
-     `-96.79949 -91.90566`
+`-96.79949 -91.90566`
 
-     `sample estimates:`
+`sample estimates:`
 
-    `mean of x mean of y` 
+`mean of x mean of y` 
 
-    `117.25    316.50` 
+`117.25    316.50` 
 
-    `load(Ecadherin.rda)`
+`load(Ecadherin.rda)`
 
-    `head(Ecadherin)`
+`head(Ecadherin)`
 
-   `res<-ta.test(X=Ecadherin,nci=1, na=3,nb=3, eqv=TRUE, LOG="LOG2", alternative = "two.sided")`
+`res<-ta.test(X=Ecadherin,nci=1, na=3,nb=3, eqv=TRUE, LOG="LOG2", alternative = "two.sided")`
 
 ## Note
 [1] if X contains negative values in two conditions, them ta.test is almost equivalent to t.test
+
 [2] if X is taken logarithm using base 10, 2 or natural logarithm, then user must set LOG="LOG10", "LOG2" or "LOG", otherwise, the result is incorrect. 
 
 
