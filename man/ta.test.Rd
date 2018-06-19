@@ -37,13 +37,13 @@ a logical variable indicating whether to treat the two variances as being equal.
 }
 
   \item{LOG}{
-logarithm: if data are not taken logarithm convertion, then LOG=NULL , if data are converted into logarithm with base 10, 2 or natural logarithm, then correspondingly, LOG="LOG10", "LOG2" or LOG.
+logarithm: if data are not taken logarithm convertion, then LOG=NULL , if data are converted into logarithm with base 10, 2 or natural logarithm, then correspondingly, LOG="LOG10", "LOG2" or "LOG".
 }
   \item{alternative}{
 a character string specifying the alternative hypothesis, must be one of "two.sided" (default), "greater" or "less". You can specify just the initial letter.
 }
   \item{distr}{
-data distribution for estimating omega (\eqn{\omega}). Default is normal distribution.  In current version, we just consider three types of distributions: "negative distribution"(or "NB"), "norm"(or "normal"), and "unif"("uniform").  User can choose one of them according to user's' data distribution.
+data distribution for estimating omega (\eqn{\omega}). Default is normal distribution.  In current version, we just consider three types of distributions: "negative distribution"(or "NB"), "norm"(or "normal"), and "unif"("uniform").  User can choose one of them according to user's data distribution.
 }
 }
 \details{
@@ -76,7 +76,7 @@ a confidence interval for the mean appropriate to the specified alternative hypo
 estimate
 the estimated mean or difference in means depending on whether it was a one-sample test or a two-sample test.
 null.value
-the specified hypothesized value of the mean or mean difference depending on whether it was a one-sample test or a two-sample test.
+the specified hypothesized value of the mean or mean difference.
 alternative
 a character string describing the alternative hypothesis.
 method
