@@ -1,0 +1,12 @@
+Package: tatest
+Type: Package
+Title: Two-Group Ta-Test
+Version: 1.0
+Date: 2018-06-08
+Author: Yuan-De Tan
+Maintainer:Yuan-De Tan <tanyuande@gmail.com>
+Description: ta-test is a modified two-sample or two-group t-test. In small samples,ta-test significantly reduces type I error rate but power is almost same with t-test. ta-test can test for single null hypothesis or test for multiple null hypotheses.
+License: GPL-3
+Depends: R (>= 3.3.0), stats, base,utils
+LazyLoad: yes
+NeedsCompilation: no
