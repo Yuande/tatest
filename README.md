@@ -1,5 +1,5 @@
 
-#tatest
+# tatest
 
 tatest is called ta-test, a modified two-sample or two-condition t-test where "a" is alpha that is significance level. ta-test has much lower type I error rate than t-test in biological experiments with small samples but it has the same statistical power with t-test. ta-test can be used to test for single null hypothesis with one tail ("less", "greater") or two tails("two.sided") but also can be used to perform multiple hypotheses. 
 
@@ -8,7 +8,8 @@ tatest is called ta-test, a modified two-sample or two-condition t-test where "a
 `ta.test(X, nci=NULL, na, nb, alpha=0.05, paired=FALSE, eqv=TRUE,LOG=c("NULL","LOG2","LOG","LOG10"),
  alternative = c("two.sided", "less", "greater"), distr="norm")`
 
-where 
+where
+
 **X**: a numeric vector data or a numeric matrix (two columns) dataset with two conditions or groups A and B having sample size na and nb, respectively. X is also a datasheet of multiple variables (for example, genes ) with two groups A and B and information (character) columns(see an example Ecadherin)
 
 **nci**: a numeric int value, column numbers for strings or information of data. If X is a numeric vector data or a numeric matrix (two columns) dataset, then nci=NULL, otherwise, nci is required to be non-zeror integer, meaning that at least one column is reserved as information of data
