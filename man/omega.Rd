@@ -30,7 +30,7 @@ simulation number specified.
 a numeric value, statistical cutoff. Default is 0.05.
 }
   \item{distr}{
-data distribution specified for data. For current version, we consider three distributions: normal, negative binomial (NB) and uniform. Default distribution is "norm". If user believe that his/her data follow negative binomial, then set distr="NB" or "negative binomial" or the data follow uniform, then set distr="unif"or "uniform". 
+data distribution specified for data. For current version, we consider three distributions: normal, negative binomial (NB) and uniform. Default distribution is "norm". If user believe that his/her data follow negative binomial, then set distr="NB" or "negative binomial" or if the data follow uniform, then set distr="unif"or "uniform". 
 }
 }
 \details{
@@ -61,5 +61,5 @@ omega(XA=X, XB=Y, na=4, nb=4, m=2000, alpha = 0.05,distr="uniform")
 #[1] 0.97194
 }
 
-\keyword{ thresholds }
-\keyword{ rho}
+\keyword{thresholds }
+\keyword{rho}
