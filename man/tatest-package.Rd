@@ -5,10 +5,10 @@
 Two-Group \eqn{T_\alpha}-Test
 }
 \description{
-\eqn{t_\alpha}-test is a modified two-sample or two-group t-test of Gosset (1908)
+The \eqn{t_\alpha}-test is a modified two-sample or two-group t-test of Gosset(1908).
 }
 \details{
-Package tatest consists of three t-tests: ttest, tatest and mtatest. ttest, rhov,and omega construct tatest, ttest and rhov and momega construct mtatest. \eqn{t_\alpha}-test is used to test for a single null hypothesis  and \eqn{mt_\alpha}-test is used to identify differential expressed genes in microarray data. 
+The package tatest consists of three t-tests: ttest, tatest and mtatest. ttest, rhov,and omega construct tatest, ttest and rhov and momega construct mtatest. \eqn{t_\alpha}-test is used to test for a single null hypothesis  and \eqn{mt_\alpha}-test is used to identify differential expressed genes in microarray data and RPPA data or proteomic data. 
 }
 \author{
 Yuande Tan

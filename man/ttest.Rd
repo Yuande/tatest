@@ -56,28 +56,44 @@ When pooled variance is larger, ttest is equvalent to t.test; When pooled varian
 }
 \value{
 A list with class "htest" containing the following components:
-
+\cr
 statistic
+\cr
 the value of the t-statistic.
+\cr
 parameter
+\cr
 the degrees of freedom for the t-statistic.
+\cr
 p.value
+\cr
 the p-value for the test.
+\cr
 conf.int
+\cr
 a confidence interval for the mean appropriate to the specified alternative hypothesis.
+\cr
 estimate
+\cr
 the estimated mean or difference in means depending on whether it was a one-sample test or a two-sample test.
+\cr
 null.value
+\cr
 the specified hypothesized value of the mean or mean difference depending on whether it was a one-sample test or a two-sample test.
+\cr
 alternative
+\cr
 a character string describing the alternative hypothesis.
+\cr
 method
+\cr
 a character string indicating what type of t-test was performed.
+\cr
 data.name
 a character string giving the name(s) of the data.
 }
 \references{
-Gosset, W.S, 1908, "Probable error of a correlation coefficient". Biometrika. 6 (2/3): 302-310.  
+Gosset, W.S, "Probable error of a correlation coefficient". Biometrika. 1908,6(2/3): 302-310.  
 }
 \author{
 Yuande Tan

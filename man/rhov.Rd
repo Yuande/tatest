@@ -5,7 +5,7 @@
 Calculation of rho (\eqn{\rho}) value
 }
 \description{
-rho is used to define a gap and variation between two datasets
+The rho is used to define a gap and variation between two datasets, similar to fc(fold change).
 }
 \usage{
 rhov(XA, XB)
@@ -20,7 +20,7 @@ a numeric vector in condition B.
 }
 }
 \details{
-rho is defined as square root of products of \deqn{\psi} and \deqn{\zeta}, that is \deqn{\rho=\sqrt{\psi\zeta}} where \eqn{\psi} is used to define a overlap between two datasets and \eqn{\zeta} is used to define effect variation. \eqn{\rho > 1} indicates that there is gap between two datasets and noise is smaller than treatment effect, otherwise, there is overall lap and big noise in two datasets.
+The rho is defined as square root of products of \deqn{\psi} and \deqn{\zeta}, that is \deqn{\rho=\sqrt{\psi\zeta}} where \eqn{\psi} is used to define a overlap between two datasets and \eqn{\zeta} is used to define effect variation. \eqn{\rho > 1} indicates that there is gap between two datasets and noise is smaller than treatment effect, otherwise, there is overall lap and big noise in two datasets.
 
 }
 \value{

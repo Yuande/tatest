@@ -5,8 +5,8 @@
  Null rho for testing multiple null hypotheses
 }
 \description{
-Momega function is a function that is used to estimate omega for testing multiple null hypotheses. 
-Omege is a null rho that is used as a threshold for real rho. Since this omega is majorly applied 
+Momega is a function that is used to estimate omega for testing multiple null hypotheses. 
+Omege is a null \eqn{\rho} that is used as a threshold for \eqn{\rho} from real data. Since this omega is majorly applied 
 to micoarray, we named this function  as momega.
 }
 \usage{

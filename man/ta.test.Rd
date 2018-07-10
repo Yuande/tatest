@@ -4,7 +4,7 @@
 \eqn{t_\alpha}-test for testing difference between two conditions with small samples
 }
 \description{
-\eqn{t_\alpha}-test is a modified t-test of Gosset(1098). 
+\eqn{t_\alpha}-test is a modified t-test of Gosset(1908). 
 }
 \usage{
 ta.test(X, nci=NULL, na, nb, alpha=0.05, paired=FALSE, eqv=TRUE,
@@ -66,30 +66,48 @@ ta.test can be used to test for differentially expressed genes in microarray dat
 \value{
 If X is single-hypothesis test data, then  a list similar to t.test containing the following components:
 statistic
+\cr
 the value of the t-statistic.
+\cr
 parameter
+\cr
 the degrees of freedom for the t-statistic.
+\cr
 p.value
+\cr
 the p-alue for the test.
+\cr
 conf.int
+\cr
 a confidence interval for the mean appropriate to the specified alternative hypothesis.
+\cr
 estimate
+\cr
 the estimated mean or difference in means depending on whether it was a one-sample test or a two-sample test.
+\cr
 null.value
+\cr
 the specified hypothesized value of the mean or mean difference depending on whether it was a one-sample test or a two-sample test.
+\cr
 alternative
+\cr
 a character string describing the alternative hypothesis.
+\cr
 method
+\cr
 a character string indicating what type of t-test was performed.
+\cr
 data.name
+\cr
 a character string giving the name(s) of the data.
+\cr
 omega
 a threshold for rho in tatest. 
 \cr
 If X is microarray, RPPA data, then a list is datasheet including t01,pv01, t05 and p05 columns
 }
 \references{
-Gosset, W.S, 1908, "Probable error of a correlation coefficient". Biometrika. 6 (2/3): 302-310.  
+Gosset, W.S, "Probable error of a correlation coefficient". Biometrika. 1908,6 (2/3): 302-310.  
 }
 \author{
 Yuande Tan
@@ -97,7 +115,7 @@ Yuande Tan
 \email{tanyuande@gmail.com}
 }
 \note{
-LOG choice must be consistent with data X.
+LOG choice must be the same with log transformation of data.
 }
 
 \seealso{
