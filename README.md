@@ -106,5 +106,6 @@ If X is microarray, RPPA data, then a list is datasheet including t01,pv01, t05 
 
 [2] if X is taken logarithm using base 10, 2 or natural logarithm, then user must set LOG="LOG10", "LOG2" or "LOG", otherwise, the result is incorrect. 
 
-
+Reference
+1.	Tan YD., Two-sample tα-test for testing hypotheses in small-sample experiments, International Journal of Biostatistics, Int. J. Biostat. 2022; aop ,https://doi.org/10.1515/ijb-2021-0047
 
